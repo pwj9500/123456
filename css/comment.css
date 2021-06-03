@@ -1,0 +1,204 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700&display=swap");
+@import url(reset.css);
+/* component */
+@import url(component/board.css);
+@import url(component/top-nav.css);
+@import url(component/btn-input.css);
+@import url(component/category.css);
+@import url(component/side-nav.css);
+@import url(component/footer.css);
+/* screen */
+@import url(profile.css);
+@import url(gamenews.css);
+@import url(login.css);
+
+/* 공통 */
+
+body {
+  font-family: "Gothic A1", sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+
+section {
+  margin-top: 70px;
+  width: 1200px;
+  position: relative;
+  margin-bottom: 50px;
+}
+::selection {
+  background-color: #7d5fff;
+  color: white;
+}
+
+/* 편의를 위한 스타일 */
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.none {
+  display: none;
+}
+.line {
+  /* section을 가로지르는 보라색 구분선이 생깁니다 */
+  border-bottom: 2px solid #7d5fff;
+  width: 1200px;
+  margin: 30px 0px;
+}
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+.margin-bottom-0 {
+  margin-bottom: 0px;
+}
+.flex__start-center {
+  /* 어떤 요소를 나란히, 시작기준배치, 가운데 정렬 하고 싶을때 사용합니다*/
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex__dir-col {
+  flex-direction: column;
+}
+/* 아직 미정, 작업중 */
+.search__form {
+  width: 1200;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.card__album {
+  /* 카드 형태의 자식요소가 담기는 부모요소 입니다 */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.card__grand {
+  /* 그랜드 상품의 카드 스타일입니다 */
+  width: 250px;
+  height: 250px;
+  margin-bottom: 45px;
+  margin: 20px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.card__platinum {
+  /* 플래티넘 상품의 카드가 담기는 부모요소 입니다*/
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+}
+.card__platinum-row {
+  /* 플래티넘 상품의 카드 스타일입니다 */
+  width: 250px;
+  height: 115px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+/* 여기부터 댓글 스타일  */
+
+#comments{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.comment-submit{
+    display: flex;
+}
+#new-comment{
+  width: 600px; 
+  resize: none;
+  margin-bottom: 20px;
+}
+.comment-head{
+    display: flex;
+    margin-bottom: 10px;
+}
+.comment-row img{
+    width: 50px;
+    height: 50px;
+}
+.comment-row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.comment-date{
+    margin-bottom: 10px;
+    font-size: small;
+}
+.comment-user{
+    border-bottom:1px solid slateblue;
+    padding-bottom: -10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-100 {
+   margin-top: 5px;
+    margin-left: 20px;
+    width: 100px;
+    height: 90px;
+    background: #7d5fff;
+    border: 2px solid #7d5fff;
+    color: #fff;
+    display: block;
+    transition: 0.2s ease all;
+    border-radius: 3px;
+    font-size: 15px;
+  }
+ .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid silver;
+    background-color: silver;
+}
+.form__input-text {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    border-radius: 5px ;
+  }
+.deleteBtn{
+    display: none;
+}
+.updateBtn{
+    width: 60px;
+    height: 30px;
+    font-size: 16px;
+    background: white;
+    border: 2px solid #7d5fff;
+    color: #7d5fff;
+    display: block;
+    transition: 0.2s ease all;
+    margin-bottom: 10px;
+  }
+  .updateBtn:hover {
+    border: 5px solid white;
+    background-color: #7d5fff;
+    color: white;
+  }
+a{
+    color: #000;
+}
+textarea:focus {
+    outline: none;
+  }

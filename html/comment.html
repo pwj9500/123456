@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>댓글</title>
+    <link rel="stylesheet" href="../css/comment.css">
+    <script src="/js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <header class="top">
+        <div class="nav">
+          <div class="nav__left">
+            <a class="nav__logo" href="index.html">
+              <img src="../logo.svg" alt="" />
+              <h1>guilgu</h1>
+            </a>
+          </div>
+          <div class="nav__right">
+            <ul class="nav__right-menu">
+              <li><a href="#">게임별</a></li>
+              <li><a href="#">헤드헌팅</a></li>
+              <li><a href="#">게임뉴스</a></li>
+              <li><a href="#">길드관리</a></li>
+            </ul>
+            <div class="nav__right-btn">
+              <button class="btn-100-white">sign in</button>
+            </div>
+          </div>
+        </div>
+    </header>
+
+   
+    <section class="center">        
+        <div id="comments">
+
+            <div id="comment-head" class="comment-head">
+                <span id="comment-count">1</span> 개의 댓글
+            </div>
+
+            <div class="comment-submit">
+                    <div class="comment-row">
+                        <textarea id="new-comment" class="form__input-text" name="new_comment" rows=4 placeholder=" 댓글을 작성해보세요!" ></textarea>
+                    </div>
+                        <button class="btn-100" type="submit" onclick="submitComment()">작성</button>
+                </div>
+
+            <div>
+                <div class="comment-row">
+                        <!-- 로그인 기능과 연동하여 사용 -->
+                        <div class="comment-user">작성자 아이디
+                            <button class="updateBtn">수정</button>
+                        </div>
+                        <div class="comment-date">작성 시간</div>
+                        <div class="comment-content">작성한 댓글</div>
+                        <!-- 관리자일때만 삭제 가능 -->
+                        <button class="deleteBtn">삭제</button>
+                </div>
+                <!-- <div>
+                    <button class="updateBtn">수정</button>
+                </div> -->
+            </div>
+            
+
+        </div>
+    </section>
+
+   
+
+    <footer>
+        <div class="footer-row">
+          <div><a href="">서비스이용약관</a></div>
+          <div><a href="">개인정보처리방침</a></div>
+          <div><a href="">운영정책</a></div>
+          <div><a href="">1:1문의</a></div>        
+      </div>
+      <div class="footer-row">
+          <div class="liner">㈜길구</div>
+          <div class="liner">팀대표: 유지훈</div>
+          <div>서울시 강남구 테헤란로 14길 6 남도빌딩 2F~6F</div> 
+      </div>
+      <div class="footer-row">
+          <div class="liner">GuilGu 멤버</div>
+          <div>노상민, 정우석, 박원재, 김가현</div>
+      </div>
+      <div class="footer-row">
+          <div class="liner">대표번호: 1554-9970</div>
+          <div>팩스: 02-562-2378</div>
+      </div>
+      <div class="footer-row">
+          <div class="liner"><a href=""> GuilGu </a></div>
+          <div id="copyRight">GuilGu CopyrightⓒGG Corp. All Rights Reserved </div>
+      </div>
+    </footer>
+
+
+    <script>
+        function emptyAlert(){
+            alert("빈칸은 작성할 수 없습니다.");
+        }
+
+        function dateToString(date){
+            //const dateString = date.toISOString();
+            
+            const dateToString = date.toLocaleString();
+            return dateToString;
+        }
+
+        function submitComment(){
+            const newCommentEL=document.getElementById('new-comment');
+            const newComment=newCommentEL.value.trim();
+
+            if(newComment){
+                const dateEL=document.createElement("div");
+                dateEL.classList.add("comment-date");
+                const dateString = dateToString(new Date());
+                dateEL.innerText=dateString;
+               
+
+                const contentEL=document.createElement('div');
+                contentEL.classList.add("comment-content");
+                contentEL.innerText=newComment;
+
+
+                const userEL=document.createElement("div");
+                userEL.classList.add("comment-user");
+                //newComment 부분을 회원의 아이디로 수정하여 사용
+                userEL.innerHTML="<a href='#'>작성자 아이디</a>";
+
+                //관리자에게만 보이도록 처리
+                const deleteBtn=document.createElement("button");
+                deleteBtn.classList.add("deleteBtn");
+                deleteBtn.innerText="삭제";
+                
+                const updateBtn=document.createElement("button");
+                updateBtn.classList.add("updateBtn");
+                updateBtn.innerText="수정";
+
+                const commentEL=document.createElement("div");
+                commentEL.classList.add('comment-row');
+                commentEL.appendChild(userEL).append(updateBtn);
+                commentEL.appendChild(dateEL);
+                commentEL.appendChild(contentEL);
+                commentEL.appendChild(deleteBtn);
+
+                document.getElementById("comments").appendChild(commentEL);
+                newCommentEL.value="";
+
+                const countEL=document.getElementById("comment-count");
+                const count=parseInt(countEL.innerText);
+                countEL.innerText=parseInt(count)+1;
+                
+
+            }
+            else emptyAlert();
+
+        }
+
+    </script>
+
+</body>
+</html>

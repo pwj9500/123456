@@ -1,0 +1,151 @@
+.form__input-row {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.form__input-text {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+input:focus {
+  outline: none;
+}
+
+.form__input-label {
+  color: #999;
+  font-size: 18px;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #7d5fff;
+}
+
+.input-bar {
+  position: relative;
+  display: block;
+  width: 315px;
+}
+.input-bar::before,
+.input-bar::after {
+  content: "";
+  height: 2px;
+  width: 0px;
+  bottom: 1px;
+  position: absolute;
+  background-color: #7d5fff;
+  transition: 0.2s ease all;
+}
+.input-bar::before {
+  left: 50%;
+}
+.input-bar::after {
+  right: 50%;
+}
+
+input:focus ~ .input-bar:before,
+input:focus ~ .input-bar:after {
+  width: 50%;
+}
+/* 버튼
+네이밍: btn-width-색상
+으로 필요한 크기로 맞춰 만드시면 됩니다. hover도 같이 만들어주세요!
+*/
+.btn-100 {
+  width: 100px;
+  height: 35px;
+  background: #7d5fff;
+  border: 2px solid #7d5fff;
+  color: #fff;
+  display: block;
+  height: 30px;
+  transition: 0.2s ease all;
+}
+
+.btn-100:hover {
+  border: 2px solid #7d5fff;
+  background-color: white;
+  color: #7d5fff;
+}
+
+.btn-100-white {
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  background: white;
+  border: 2px solid #7d5fff;
+  color: #7d5fff;
+  display: block;
+  height: 30px;
+  transition: 0.2s ease all;
+}
+.btn-100-white:hover {
+  border: 5px solid white;
+  background-color: #7d5fff;
+  color: white;
+}
+
+/* 해쉬태그 체크박스 버튼과 라벨 스타일 */
+
+.hashtag-box {
+  display: none;
+}
+
+.hashtag-box {
+  display: absolute;
+}
+.hashtag-box:checked + label {
+  border: 2px solid #7d5fff;
+  background-color: #7d5fff;
+  color: #fff;
+  transition: all 0.2s;
+}
+.hashtag-box:checked + .hashtag-label::before {
+  content: "✔️";
+  transform: rotate(-360deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hashtag-label::before {
+  display: inline-block;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  content: "✔️";
+  transition: transform 0.3s ease-in-out;
+}
+.hashtag-label {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.hashtag-label {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(139, 139, 139, 0.3);
+  color: #adadad;
+  border-radius: 25px;
+  white-space: nowrap;
+  margin: 3px 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.2s;
+}

@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../prac"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "semi-front"
+  }
+}

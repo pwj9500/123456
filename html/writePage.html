@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css"
+    />
+
+    <title>guilgu | main</title>
+  </head>
+  <body>
+    <header class="top">
+      <div class="nav">
+        <div class="nav__left">
+          <a class="nav__logo" href="index.html">
+            <img src="/logo.svg" alt="" />
+            <h1>guilgu</h1>
+          </a>
+        </div>
+        <div class="nav__right">
+          <ul class="nav__right-menu">
+            <li><a href="#">게임별</a></li>
+            <li><a href="#">헤드헌팅</a></li>
+            <li><a href="#">게임뉴스</a></li>
+            <li><a href="#">길드관리</a></li>
+          </ul>
+          <div class="nav__right-btn">
+            <button class="sign-in__btn">sign in</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div id="editor" style="width: 800px"></div>
+      <button onclick="ToView();">마크다운으로 뷰어에 출력</button>
+      <button onclick="exgetMarkdown();">마크다운으로 받아서 콘솔출력</button>
+      <div id="viewer"></div>
+    </section>
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+    <script>
+      const editor = new toastui.Editor({
+        el: document.querySelector("#editor"),
+        previewStyle: "vertical",
+        initialEditType: "wysiwyg",
+        height: "500px",
+      });
+
+      const viewer = toastui.Editor.factory({
+        el: document.querySelector("#viewer"),
+        viewer: true,
+        height: "500px",
+      });
+
+      function ToView() {
+        viewer.setMarkdown(editor.getMarkdown());
+      }
+
+      function exgetMarkdown() {
+        const text = editor.getMarkdown();
+        console.log(text);
+      }
+
+      function ex() {
+        viewer.setMarkdown("# 안녕하세요");
+      }
+    </script>
+  </body>
+</html>

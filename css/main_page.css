@@ -1,0 +1,244 @@
+a{
+  color:#000;
+}
+/* 슬라이드 기본 css */
+*{margin:0; padding:0;}
+li{list-style:none;}
+
+.slide-wrapper{
+  /* 슬라이드 메뉴를 감싸고 있는 div */
+	position: relative;
+	width: 890px;
+	margin: 0 auto;
+	height: 500px;
+	overflow:hidden;
+  margin-top: 50px;
+}
+.slides{
+	position: absolute;
+	left:0; top:0;	
+  display: flex;
+
+}
+.slides.animated{
+  /* 슬라이드가 자연스럽게 움직이게 하는 애니메이션 */
+	transition: 0.5s ease-out;
+}
+.slides li{
+  /* 광고 배너 하나를 가리킴 */
+	width: 200px;
+	height: 400px;
+	float:left;
+  border-radius: 25px;
+}
+.slides li:not(:last-child){	
+  /* 4번째 광고를 제외한 margin값 */
+	margin-right: 30px;
+}
+.controls span>img{
+  /* 이전과 다음 슬라이드로 이동하는 버튼 */
+	width: 50px;
+  height: 50px;
+	padding:10px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.slide-content{
+  /* 4개로 나눠진 슬라이드 구역 */
+  background-color: white;
+  height: 100%;
+  display: block;
+  text-align: center;
+  box-shadow: 5px 5px 5px 5px silver;
+  border-radius: 25px;
+}
+.slide-content:hover{
+  border: 3px solid #7d5fff;
+  border-radius: 30px;
+}
+.slide-content img{
+  /* 길드 이미지  */
+  height: 150px;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.category__title {
+  /* 메인카테고리 타이틀을 나타냅니다 */
+  font-size: 30px;
+  margin: 50px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-right: 600px;
+}
+.category__subtitle-sub {
+  /* 메인타이틀 밑에 서브 타이틀 */
+  font-size: 15px;
+  margin-right: 520px;
+  margin-top: 10px;
+}
+.tier{
+  /* 상품 이름*/
+  font-size: 15px;
+  margin-top: 10px;
+}
+.tier:hover{
+  color: #7d5fff;
+}
+.detail{
+  /* 더보기를 감싼 div */
+  display: flex;
+  justify-content: center;
+}
+.btn-100-white {
+  /* 게임별 길드 검색의 검색 버튼 */
+  font-size: 14px;
+  width: 100px;
+  height: 40px;
+  background: white;
+  border: 2px solid #7d5fff;
+  color: #7d5fff;
+  height: 30px;
+  transition: 0.3s ease all;
+  margin-left: 20px;
+}
+.guild-search{
+  /* 게임별 검색 인풋, 버튼을 감싼 div */
+  display: flex;
+}
+.form__input-text {
+  /* 게임별 검색창 */
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 600px;
+  border: none;
+  border-bottom: 1px solid #7d5fff;
+  margin-bottom: 40px;
+}
+.review:hover{
+  color:#7d5fff;
+}
+.btn-100 {
+  /* 더보기 버튼 */
+  width: 170px;
+  height: 35px;
+  background: #7d5fff;
+  border: 2px solid white;
+  color: #fff;
+  height: 30px;
+  transition: 0.2s ease all;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+.hot100{
+  /* 핫 백 길드 홍보글 테이블을 감싸는 div */
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.sub-title{
+  /* 테이블의 크기 */
+  text-align: center;
+  width: 1000px;
+  height: 1000px;
+  margin-top: 20px;
+}
+th{
+  /* 핫 백 제목글 */
+  font-weight: bold;
+  font-size: 20px;
+}
+td{
+  /* 핫 백 길드 설명 글 */
+  border-bottom: 1px solid silver;
+  font-size: 15px;
+
+}
+td button{
+  /* 즉시지원 버튼 */
+  width: 100px;
+  height: 35px;
+  background: #7d5fff;
+  border: 2px solid #7d5fff;
+  color: #fff;
+  display: block;
+  height: 30px;
+  transition: 0.2s ease all;
+  margin-top: 25px;
+}
+td button:hover{
+  border: 2px solid #7d5fff;
+  background-color: white;
+  color: #7d5fff;
+}
+.category__subtitle-1{
+  /* 슬라이드 메뉴와 핫 백의 큰 타이틀 */
+  color: white;
+  background-color: #7d5fff;
+  border-radius: 35px;
+  padding: 30px 60px 30px 60px;
+}
+.first{
+  /* 1위 길드 */
+  color:gold;
+  font-size: 19px;
+  font-weight: bold;
+}
+.second{
+  /* 2위 길드 */
+  font-weight: bold;
+  color:silver;
+  font-size: 17px;
+}
+.third{
+  /* 3위 길드 */
+  font-weight: bold;
+  color:#A84E19;
+  font-size: 15px;
+}
+input[id^="zzim"] + label{
+  /* 찜하기 input 태그 및 label */
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../css/image/heart_empty.png");
+  cursor: pointer;
+  transition: all ease 0.3s 0s;
+}
+input[id^="zzim"]:checked + label{
+  /* input, label이 체크 되면 바뀌는 모양 */
+  width: 24px;
+  height: 24px;
+  background-image: url("../css/image/heart24px.png");
+  cursor: pointer;
+}
+input[id^="zzim"]{
+  display: none;
+}
+.zzim-div{
+  /* 길드명과 찜하기를 감싸고 있는 div */
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: -100px;
+}
+.explan{
+  /* 길드 홍보 글 */
+  font-size: small;
+}
+.fast{
+  /* 즉시지원 버튼을 감싸고 있는 div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

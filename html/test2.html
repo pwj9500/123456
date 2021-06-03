@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tui-calendar/1.13.0/tui-calendar.css"
+      integrity="sha512-XA2T0aQ2w6qORWv3rY2CotaFmtsipBs7b5EL7jPfzRlz5fYHX7TO7Bt2XClzUvzL1bdpgt4I/RmGaWfpCZmYtA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tui-calendar/1.13.0/tui-calendar.css.map"
+    />
+  </head>
+  <body>
+    <div id="calendar" style="height: 800px"></div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/tui-editor/1.4.10/tui-editor-Editor.min.js"
+    integrity="sha512-qXIBpDrt28cXwlx/eETqHe+08w989yRDXhT9WGOFGfwdMFhs+qT/kVDbEvDOC8UTdKF+LzjLlPAUK8rqVMYvPg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    const container = document.getElementById("calendar");
+    const options = {
+      defaultView: "week",
+      week: {
+        hourStart: 7,
+        hourEnd: 18,
+      },
+    };
+
+    const calendar = new tui.Calendar(container, options);
+  </script>
+</html>

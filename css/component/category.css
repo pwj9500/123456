@@ -1,0 +1,21 @@
+.category__title {
+  /* 메인카테고리 타이틀을 나타냅니다 */
+  font-size: 30px;
+  margin: 40px 0px;
+  font-weight: 600;
+}
+.category__subtitle-1 {
+  /* 메인카테고리 안의 세부카테고리를 나타냅니다 */
+  font-size: 30px;
+  margin: 20px 0px;
+}
+.category__subtitle-2 {
+  /* 메인카테고리 안의 세부카테고리의 세부카테고리 입니다 */
+  font-size: 20px;
+  margin: 20px 0px;
+}
+.category__subtitle-3 {
+  /* 메인카테고리>세부카테고리>세부카테고리의 설명을 작성할때 사용합니다 */
+  font-size: 12px;
+  margin: 20px 0px;
+}

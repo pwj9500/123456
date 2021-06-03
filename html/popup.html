@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업</title>
+    <link rel="stylesheet" href="../css/popup.css">
+</head>
+<body>
+   <div class="gg">
+   <input type="checkbox" id="popup">
+   <label for="popup">길구가 뭐야?
+       <img src="../css/image/3468074-unicorn/png/024-unicorn.png" alt="" class="popup-img">
+   </label>
+
+    <div>
+        <div>
+            
+        </div>
+        <label for="popup"></label>
+    </div>
+    </div>
+
+    <script>
+        var fp = parseInt($(".gg").css('top'))
+
+        $(window).scroll(function(){
+            
+            var currentTop =
+            $(window).scrollTop();
+            var bannerTop = currentTop + 
+            fp + "px";
+
+            $(".gg").stop().animate({
+                "top" : bannerTop
+            }, 500);
+
+        }).scroll();
+    </script>
+</body>
+</html>
+
+

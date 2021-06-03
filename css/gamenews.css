@@ -1,0 +1,34 @@
+.news__card {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.news__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.news__img > img {
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+}
+
+.news__text-title > a {
+  color: #7d5fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.news__text-contents-article {
+  color: #7c7c7c;
+  line-height: 125%;
+  font-size: 16px;
+  display: inline;
+}
+
+.news__text-contents-date {
+  color: #7c7c7c;
+  display: inline;
+  font-size: 16px;
+}

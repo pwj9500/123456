@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>guilgu | 상품</title>
+    <link rel="stylesheet" href="../css/product_page.css" />
+    <script src="/js/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header class="top">
+      <div class="nav">
+        <div class="nav__left">
+          <a class="nav__logo" href="index.html">
+            <img src="../logo.svg" alt="" />
+            <h1>guilgu</h1>
+          </a>
+        </div>
+        <div class="nav__right">
+          <ul class="nav__right-menu">
+            <li><a href="#">게임별</a></li>
+            <li><a href="#">헤드헌팅</a></li>
+            <li><a href="#">게임뉴스</a></li>
+            <li><a href="#">길드관리</a></li>
+          </ul>
+          <div class="nav__right-btn">
+            <button class="btn-100-white">sign in</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h1 class="category__title">상품 목록</h1>
+      <div class="line"></div>
+
+      
+    <div class="center" id="main">
+      
+          <div class="product-board">
+                
+            <div class="product-board-info">
+              <h1  class="category__subtitle-1">그랜드</h1>
+              <h2 class="category__subtitle-2">길구 최상단 노출, 길드장이 가장 선호하는 상품! 최고의 길드가 되기 위한 선택!</h2>
+              <div class="product-board-detail">
+              <h2 class="category__subtitle-2">1일 50,000 GGP</h2>
+              
+              <button class="btn-100-white">상세보기</button>
+            </div>
+              <div class="toogle">
+                <hr>
+                <img src="/image/상세보기.png">
+              </div>
+            </div>
+
+            <div class="payment">
+              
+              <button class="btn-100"><p class="btn-font">결제하기</p></button>
+            </div>
+          </div>
+
+          <div class="product-board">
+            
+            <div class="product-board-info">
+              <h1  class="category__subtitle-1">플래티넘</h1>
+              <h2 class="category__subtitle-2">길구 추천 상품! 수많은 인재들을 영입해보세요!</h2>
+              <div class="product-board-detail">
+                <h2 class="category__subtitle-2">1일 30,000 GGP</h2>
+                <button class="btn-100-white">상세보기</button>
+              </div>
+              <div class="toogle">
+                <img src="/image/상세보기.png">
+              </div>
+            </div>
+
+            <div class="payment">
+              
+              <button class="btn-100"><p class="btn-font">결제하기</p></button>
+            </div>
+          </div>
+
+          <div class="product-board">
+            
+            <div class="product-board-info">
+              <h1  class="category__subtitle-1">프라임</h1>
+              <h2 class="category__subtitle-2">초보 길드 추천상품! 길구의 길드원과 최고의 길드를 만들어보세요!</h2>
+              
+              <div class="product-board-detail">
+                <h2 class="category__subtitle-2">1일 15,000 GGP</h2>
+                <button class="btn-100-white">상세보기</button>
+              </div>
+              <div class="toogle">
+                <img src="/image/상세보기.png">
+              </div>
+            </div>
+            
+            <div class="payment">
+              
+              <button class="btn-100">
+                <p class="btn-font">결제하기</p></button>
+            </div>
+          </div>
+
+          <div class="product-board">
+            
+            <div class="product-board-info">
+              <h1  class="category__subtitle-1">길드 마크등록</h1>
+              <h2 class="category__subtitle-2">우리 길드만의 길드마크로 길드를 나타내보세요!</h2>
+              
+              <div class="product-board-detail">
+              <h2 class="category__subtitle-2">1일 10,000 GGP</h2>
+              <button class="btn-100-white">상세보기</button>
+              </div>
+              <div class="toogle">
+                <img src="/image/나의 길드.png">
+              </div>
+            </div>
+            <div class="payment">              
+              <button class="btn-100"> <p class="btn-font">결제하기</p></button>
+            </div>
+          </div>
+
+          
+      </div>
+
+      <div class="center" id="update-product">
+        
+        <div class="form__input-row">
+          <input
+            class="form__input-text"
+            type="text"
+            id="name"
+            name="name"
+          />
+          <span class="input-bar"></span>
+          <label class="form__input-label" for="name">상품 이름</label>
+        </div>
+
+        <div class="form__input-row">
+          <input
+            class="form__input-text"
+            type="text"
+            id="explan"
+            name="explan"
+          />
+          <span class="input-bar"></span>
+          <label class="form__input-label" for="explan">상품 설명</label>
+        </div>
+
+        <div class="form__input-row">
+          <input
+            class="form__input-text"
+            type="text"
+            id="price"
+            name="price"
+          />
+          <span class="input-bar"></span>
+          <label class="form__input-label" for="price">상품 가격( - 일 - GGP)</label>
+        </div>
+
+        <div class="insert-delete">
+          <h3 class="category__subtitle-2">상세보기 사진등록</h3>
+          <input type="file" name="file-name" id="dImg" accept=".png, .svg, .jpg"
+           />
+          <!-- jsp에서 경로 설정해서 처리 -->
+
+
+          <button class="insert-product btn-100-white">상품 등록</button>
+
+          <!-- 상품 고유번호에 맞는 이름을 매칭해서 삭제 -->
+          <input type="text" id="delete-product-name" placeholder="삭제할 상품 입력" class="form__input-text">
+          <button class="delete-product btn-100-white">상품 삭제</button>
+        </div>
+      </div>
+        
+    </section>
+
+    <footer>
+      <div class="footer-row">
+        <div><a href="">서비스이용약관</a></div>
+        <div><a href="">개인정보처리방침</a></div>
+        <div><a href="">운영정책</a></div>
+        <div><a href="">1:1문의</a></div>        
+    </div>
+    <div class="footer-row">
+        <div class="liner">㈜길구</div>
+        <div class="liner">팀대표: 유지훈</div>
+        <div>서울시 강남구 테헤란로 14길 6 남도빌딩 2F~6F</div> 
+    </div>
+    <div class="footer-row">
+        <div class="liner">GuilGu 멤버</div>
+        <div>노상민, 정우석, 박원재, 김가현</div>
+    </div>
+    <div class="footer-row">
+        <div class="liner">대표번호: 1554-9970</div>
+        <div>팩스: 02-562-2378</div>
+    </div>
+    <div class="footer-row">
+        <div class="liner"><a href=""> GuilGu </a></div>
+        <div id="copyRight">GuilGu CopyrightⓒGG Corp. All Rights Reserved </div>
+    </div>
+    </footer>
+
+    <script>
+
+      $(".btn-100-white").click(e=>{
+        $(e.target).parent().next($(".toogle")).toggle(200);
+      })
+      $(".delete-product").click(e=>{
+        
+        
+      })
+      $(".insert-product").click(e=>{
+
+        const nameVal=$("#name").value;
+        const exVal=$("#explan").value;
+        const priceVal=$("#price").value;
+
+
+       
+
+        const productBoard=document.createElement("div");
+        productBoard.classList.add("product-board");
+
+        const productBoardInfo=document.createElement("div");
+        productBoardInfo.classList.add("product-board-info");
+
+        const category__subtitle1=document.createElement('h1');
+        category__subtitle1.classList.add("category__subtitle-1");
+        category__subtitle1.innerText=$("#name").val();
+
+        const category__subtitleExplan=document.createElement("h2");
+        category__subtitleExplan.classList.add("category__subtitle-2");
+        category__subtitleExplan.innerText=$("#explan").val();
+
+        const productBoardDetail=document.createElement("div");
+        productBoardDetail.classList.add("product-board-detail");
+        
+        const category__subtitlePrice=document.createElement("h2");
+        category__subtitlePrice.classList.add("category__subtitle-2");
+        category__subtitlePrice.innerText=$("#price").val();
+        
+        const btn100White=document.createElement("button");
+        btn100White.classList.add("btn-100-white");
+        btn100White.innerText="상세보기";
+
+        const toogle=document.createElement("div");
+        toogle.classList.add("toogle");
+
+        //  이미지 경로 받아오는 법 
+        const img=$("#dImg").val();
+        console.log(img);
+
+        const payment=document.createElement("div");
+        payment.classList.add("payment");
+
+        const btn100=document.createElement("button");
+        btn100.classList.add("btn-100");
+
+        const btnFont=document.createElement("p");
+        btnFont.classList.add("btn-font");
+        btnFont.innerText="결제하기";
+
+        productBoard.appendChild(productBoardInfo);
+        
+        productBoardInfo.appendChild(category__subtitle1);
+        productBoardInfo.appendChild(category__subtitleExplan);
+        productBoardInfo.appendChild(productBoardDetail);
+        
+        productBoardDetail.appendChild(category__subtitlePrice);
+        productBoardDetail.appendChild(btn100White);
+
+        productBoardInfo.appendChild(toogle);
+        
+
+        productBoard.appendChild(payment);
+        payment.appendChild(btn100);
+        btn100.appendChild(btnFont);
+      
+
+        $("#main").append(productBoard);
+
+     
+
+      })
+
+    </script>
+
+  </body>
+</html>

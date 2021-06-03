@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>guilgu | 메인</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/popup.css">
+    <script src="/js/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header class="top">
+      <div class="nav">
+        <div class="nav__left">
+          <a class="nav__logo" href="index.html">
+            <img src="../logo.svg" alt="" />
+            <h1>guilgu</h1>
+          </a>
+        </div>
+        <div class="nav__right">
+          <ul class="nav__right-menu">
+            <li><a href="#">게임별</a></li>
+            <li><a href="#">헤드헌팅</a></li>
+            <li><a href="#">게임뉴스</a></li>
+            <li><a href="#">길드관리</a></li>
+          </ul>
+          <div class="nav__right-btn">
+            <button class="btn-100-white">sign in</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <section class="main-center">
+    <!-- 백그라운드에 이미지나 컬러로 채우기 -->
+    <h1 class="category__title">guilgu에 어서오세요!     </h1>
+    <h1 class="category__subtitle-sub">guilgu에서 같이 모험을 떠날 용사를 찾아보세요!</h1>
+    <div class="line"></div>
+    <!-- 게임별 길드 검색창 -->
+
+    <div class="guild-search">
+      <input type="text" class="form__input-text" placeholder="게임별 길드 검색">
+      <button class="btn-100-white">검색</button>
+    </div>
+    <div >
+      <h1 class="category__subtitle-1">길구와 함께 하고 있는 길드를 소개합니다.</h1>
+    </div>
+
+    <div class="slide-menu">
+    
+      <!-- 이전 목록으로 가는 버튼 -->
+      <!-- 버튼 스타일에 대해서 -->
+      <p class="controls">
+        <span class="prev">
+          <img src="../css/image/005-back.png" alt="">
+        </span>
+        
+      </p>
+      <div class="slide-wrapper">
+
+        <!-- 공고 작성  
+        최대 16개 까지 작성 가능-->
+          <ul id="slide" class="slides">
+            <li>
+              <div class="slide-content">
+                <!-- 길드 이미지 -->
+                <img src="../css/image/logo-가로.png" alt="">
+                
+                <!-- 로그인 후 클릭시 상품 페이지로 이동 -->
+                <a href="#"><h2 class="tier">플래티넘</h2></a>
+                
+                <!-- 길드이름 -->
+                <h2 class="category__subtitle-2">최강길드</h2>
+                <!-- 길드 간단 소개글 -->
+                <h3 class="category__subtitle-3">세계관 최강자</h3>
+                
+                <a href="#"><span class="category__subtitle-3 review">길드리뷰 보기</span></a>
+                <div class="detail">
+                  <!-- 클릭시 해당 길드 페이지 이동 -->
+                <a href="#" class="btn-100">더보기</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide-content">
+                <!-- 길드 이미지 -->
+                <img src="../css/image/3468074-unicorn/png/001-unicorn.png" alt="">
+                
+                <!-- 로그인 후 클릭시 상품 페이지로 이동 -->
+                <a href="#"><h2 class="tier">플래티넘</h2></a>
+                
+                <!-- 길드 이름 -->
+                <h2 class="category__subtitle-2">BS왕자길드</h2>
+                <!-- 길드 간단 소개글 -->
+                <h3 class="category__subtitle-3">강남 세계관 최강자</h3>
+                
+                <!-- 길드 리뷰글 -->
+                <a href="#"><span class="category__subtitle-3 review">길드리뷰 보기</span></a>
+                <div class="detail">
+                  <!-- 클릭시 해당 길드 이동 -->
+                <a href="#" class="btn-100">더보기</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide-content">
+                
+                <img src="../css/image/3468074-unicorn/png/003-eye mask.png" alt="">
+                
+                <!-- 로그인 후 클릭시 상품 페이지로 이동 -->
+                <a href="#"><h2 class="tier">플래티넘</h2></a>
+                
+                <h2 class="category__subtitle-2">아빠 안잔다</h2>
+                <h3 class="category__subtitle-3">리모컨 줘.</h3>
+                
+                <a href="#"><span class="category__subtitle-3 review">길드리뷰 보기</span></a>
+                <div class="detail">
+                <a href="#" class="btn-100">더보기</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide-content">
+                
+                <img src="../css/image/카트.jpg" alt="">
+                
+                <!-- 로그인 후 클릭시 상품 페이지로 이동 -->
+                <a href="#"><h2 class="tier">플래티넘</h2></a>
+                
+                <h2 class="category__subtitle-2">한강카트</h2>
+                <h3 class="category__subtitle-3">카트 타고 한강 가실분.</h3>
+                
+                <a href="#"><span class="category__subtitle-3 review">길드리뷰 보기</span></a>
+                <div class="detail">
+                <a href="#" class="btn-100">더보기</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide-content">
+                <!-- 길드 이미지 -->
+                <img src="../css/image/3468074-unicorn/png/021-cupcake.png" alt="">
+                
+                <!-- 로그인 후 클릭시 상품 페이지로 이동 -->
+                <a href="#"><h2 class="tier">그랜드</h2></a>
+                
+                <!-- 길드이름 -->
+                <h2 class="category__subtitle-2">컵케이크</h2>
+                <!-- 길드 간단 소개글 -->
+                <h3 class="category__subtitle-3">거기에 뿔을 곁들인.</h3>
+                
+                <a href="#"><span class="category__subtitle-3 review">길드리뷰 보기</span></a>
+                <div class="detail">
+                  <!-- 클릭시 해당 길드 페이지 이동 -->
+                <a href="#" class="btn-100">더보기</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+
+              </div>
+            </li>
+            <li>
+              <div>
+
+              </div>
+            </li>
+            <li>
+              <div>
+
+              </div>
+            </li>
+            <li>
+              <div class="slide-content">
+                <!-- 길드 이미지 -->
+                <img src="../css/image/unicorn3.png" alt="">
+                
+                <!-- 로그인 후 클릭시 상품 페이지로 이동 -->
+                <a href="#"><h2 class="tier">프라임</h2></a>
+                
+                <!-- 길드이름 -->
+                <h2 class="category__subtitle-2">청와대</h2>
+                <!-- 길드 간단 소개글 -->
+                <h3 class="category__subtitle-3">청와대 같이 가실분.</h3>
+                
+                <a href="#"><span class="category__subtitle-3 review">길드리뷰 보기</span></a>
+                <div class="detail">
+                  <!-- 클릭시 해당 길드 페이지 이동 -->
+                <a href="#" class="btn-100">더보기</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+
+              </div>
+            </li>
+            <li>
+              <div>
+
+              </div>
+            </li>
+            <li>
+              <div>
+
+              </div>
+            </li>
+            <li>
+              <div class="slide-content">
+                <!-- 길드 이미지 -->
+                <img src="../css/image/logo-가로.png" alt="">
+                
+                <!-- 로그인 후 클릭시 상품 페이지로 이동 -->
+                <a href="#"><h2 class="tier">프라임</h2></a>
+                
+                <!-- 길드이름 -->
+                <h2 class="category__subtitle-2">4번째 슬라이드 페이지</h2>
+                <!-- 길드 간단 소개글 -->
+                <h3 class="category__subtitle-3">아이디어 고갈</h3>
+                
+                <a href="#"><span class="category__subtitle-3 review">길드리뷰 보기</span></a>
+                <div class="detail">
+                  <!-- 클릭시 해당 길드 페이지 이동 -->
+                <a href="#" class="btn-100">더보기</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+
+              </div>
+            </li>
+            <li>
+              <div>
+
+              </div>
+            </li>
+            <li>
+              <div>
+
+              </div>
+            </li>
+            
+          </ul>
+                 
+        </div>
+      <!-- 다음 목록으로 가는 버튼 -->
+        <p class="controls">
+        <span class="next">
+          <img src="../css/image/004-next.png" alt="">
+        </span>
+      </p>
+    </div>
+
+   <div class="insert-slide">
+      
+   </div>
+    <div class="line"></div>
+<!--                    여기서 부터 hot 100 길드 소개                    -->
+    <div class="center">
+      
+      <div>
+        <h1 class="category__subtitle-1">길구에서 가장 인기있는 길드들을 소개합니다!</h1>
+      </div>
+      <div class="hot100">
+          <table class="sub-title">
+          <th>랭킹</th>
+          <th>길드명 <p class="explan">(찜하기)</p></th>
+          <th>글 제목</th>
+          <th>태그</th>
+          <th>즉시지원</th>
+
+       <tr>
+        <!-- 첫번째 줄 시작 -->
+        <!-- 길드 순위 -->
+          <td class="first rank">1위</td>
+          <td>
+            <div class="zzim-div">
+            <!-- 길드명 -->
+            <p>최강 길드</p> 
+            <!-- 찜하기 -->
+            <input type="checkbox" id="zzim1">
+            <label for="zzim1">
+            </label>
+            </div>
+          </td>
+          <!-- 소개글 -->
+          <td>첫번째 길드 홍보 글</td>
+          <!-- 길드태그 -->
+          <td>#길드태그</td>
+          <td>
+            <div class="fast">
+              <button>즉시지원</button>
+            </div>
+          </td>
+        </tr>     
+
+       <tr>
+        <!-- 두번째 줄 시작 -->
+        <!-- 길드 순위 -->
+          <td class="second rank">2위</td>
+          <td>
+            <div class="zzim-div">
+            <!-- 길드명 -->
+            <p>두번째 길드</p> 
+            <!-- 찜하기 -->
+            <input type="checkbox" id="zzim2">
+            <label for="zzim2">
+            </div>
+            </label>
+          </td>
+          <!-- 소개글 -->
+          <td>두번째 길드 홍보 글</td>
+          <!-- 길드태그 -->
+          <td>#길드태그</td>
+          <td>
+            <div class="fast">
+              <button>즉시지원</button>
+            </div>
+          </td>
+        </tr> 
+          
+        <tr>
+        <!-- 세번째 줄 시작 -->
+        <!-- 길드 순위 -->
+          <td class="third rank">3위</td>
+          <td>
+            <div class="zzim-div">
+            <!-- 길드명 -->
+            <p>세번째 길드</p> 
+            <!-- 찜하기 -->
+            <input type="checkbox" id="zzim3">
+            <label for="zzim3">
+            </div>
+            </label>
+          </td>
+          <!-- 소개글 -->
+          <td>세번째 길드 홍보 글</td>
+          <!-- 길드태그 -->
+          <td>#길드태그</td>
+          <td>
+            <div class="fast">
+              <button>즉시지원</button>
+            </div>
+          </td>
+        </tr> 
+
+        <tr>
+        <!-- 네번째 줄 시작 -->
+        <!-- 길드 순위 -->
+          <td class="rank">4위</td>
+          <td>
+            <div class="zzim-div">
+            <!-- 길드명 -->
+            <p>네번째 길드</p> 
+            <!-- 찜하기 -->
+            <input type="checkbox" id="zzim4">
+            <label for="zzim4">
+            </div>
+            </label>
+          </td>
+          <!-- 소개글 -->
+          <td>네번째 길드 홍보 글</td>
+          <!-- 길드태그 -->
+          <td>#길드태그</td>
+          <td>
+            <div class="fast">
+              <button>즉시지원</button>
+            </div>
+          </td>
+        </tr> 
+
+        <tr>
+          <!-- 다섯번째 줄 시작 -->
+          <!-- 길드 순위 -->
+            <td class="rank">5위</td>
+            <td>
+              <div class="zzim-div">
+              <!-- 길드명 -->
+              <p>다섯번째 길드</p> 
+              <!-- 찜하기 -->
+              <input type="checkbox" id="zzim5">
+              <label for="zzim5">
+              </div>
+              </label>
+            </td>
+            <!-- 소개글 -->
+            <td>다섯번째 길드 홍보 글</td>
+            <!-- 길드태그 -->
+            <td>#길드태그</td>
+            <td>
+              <div class="fast">
+                <button>즉시지원</button>
+              </div>
+            </td>
+          </tr> 
+
+        <tr>
+        <!-- 여섯번째 줄 시작 -->
+        <!-- 길드 순위 -->
+          <td class="rank">6위</td>
+          <td>
+            <div class="zzim-div">
+            <!-- 길드명 -->
+            <p>여섯번째 길드</p> 
+            <!-- 찜하기 -->
+            <input type="checkbox" id="zzim6">
+            <label for="zzim6">
+            </div>
+            </label>
+          </td>
+          <!-- 소개글 -->
+          <td>여섯번째 길드 홍보 글</td>
+          <!-- 길드태그 -->
+          <td>#길드태그</td>
+          <td>
+            <div class="fast">
+              <button>즉시지원</button>
+            </div>
+          </td>
+        </tr> 
+
+       <tr>
+        <!-- 일곱번째 줄 시작 -->
+        <!-- 길드 순위 -->
+          <td class="rank">7위</td>
+          <td>
+            <div class="zzim-div">
+            <!-- 길드명 -->
+            <p>일곱번째 길드 </p>
+            <!-- 찜하기 -->
+            <input type="checkbox" id="zzim7">
+            <label for="zzim7">
+            </div>
+            </label>
+          </td>
+          <!-- 소개글 -->
+          <td>일곱번째 길드 홍보 글</td>
+          <!-- 길드태그 -->
+          <td>#길드태그</td>
+          <td>
+            <div class="fast">
+              <button>즉시지원</button>
+            </div>
+          </td>
+        </tr> 
+
+
+
+        <tr>
+        <!-- 여덟번째 줄 시작 -->
+        <!-- 길드 순위 -->
+          <td class="rank">8위</td>
+          <td>
+            <div class="zzim-div">
+            <!-- 길드명 -->
+            <p>여덟번째 길드</p> 
+            <!-- 찜하기 -->
+            <input type="checkbox" id="zzim8">
+            <label for="zzim8">
+            </div>
+            </label>
+          </td>
+          <!-- 소개글 -->
+          <td>여덟번째 길드 홍보 글</td>
+          <!-- 길드태그 -->
+          <td>#길드태그</td>
+          <td>
+            <div class="fast">
+              <button>즉시지원</button>
+            </div>
+          </td>
+        </tr> 
+
+
+        <tr>
+          <!-- 아홉번째 줄 시작 -->
+          <!-- 길드 순위 -->
+            <td class="rank">9위</td>
+            <td>
+              <div class="zzim-div">
+              <!-- 길드명 -->
+              <p>아홉번째 길드</p> 
+              <!-- 찜하기 -->
+              <input type="checkbox" id="zzim9">
+              <label for="zzim9">
+              </div>
+              </label>
+            </td>
+            <!-- 소개글 -->
+            <td>아홉번째 길드 홍보 글</td>
+            <!-- 길드태그 -->
+            <td>#길드태그</td>
+            <td>
+              <div class="fast">
+                <button>즉시지원</button>
+              </div>
+            </td>
+          </tr> 
+
+
+        <tr>
+          <!-- 열번째 줄 시작 -->
+          <!-- 길드 순위 -->
+            <td class="rank">10위</td>
+            <td>
+              <div class="zzim-div">
+              <!-- 길드명 -->
+              <p>열번째 길드</p> 
+              <!-- 찜하기 -->
+              <input type="checkbox" id="zzim0">
+              <label for="zzim0">
+              </div>
+              </label>
+            </td>
+            <!-- 소개글 -->
+            <td>열번째 길드 홍보 글</td>
+            <!-- 길드태그 -->
+            <td>#길드태그</td>
+            <td>
+              <div class="fast">
+                <button>즉시지원</button>
+              </div>
+            </td>
+          </tr>
+
+
+          </table>
+      </div>
+
+      <!-- 페이지바 -->
+      <div>
+        <input type="radio"  class="pageBar pageBar__dot"/>
+        <a href="#"></a>
+      </div>   
+  </section>
+  <div class="gg">
+    <input type="checkbox" id="popup">
+    <label for="popup">길구가 뭐야?<br>
+      <img src="../css/image/3468074-unicorn/png/024-unicorn.png" alt="" class="popup-img">
+    </label>
+      
+    <div class="popup-box">
+        <div class="popup-content-box scroll type1">
+          <div class="popup-title-box">
+            <h2 class="popup-title">GuilGu</h2>
+            <div class="popup-flex-box">
+              <div class="popup-position">
+                <ul class="popup-menu-list">
+                  <li><a href="#popup-register-guild">길드등록?</a></li>
+                  <li><a href="#popup-join-guild">길드가입?</a></li>
+                  <li><a href="#popup-manage-guild">길드관리?</a></li>
+                </ul>
+              </div>
+              <div></div>
+            </div>
+          </div>  
+          <div class="popup-explan-content">
+             <div id="popup-register-guild"><img src="../css/image/3468074-unicorn/png/025-unicorn.png" alt=""></div>
+             <div id="popup-join-guild"><img src="../css/image/3468074-unicorn/png/026-unicorn.png" alt=""></div>
+             <div id="popup-manage-guild"><img src="../css/image/3468074-unicorn/png/027-unicorn.png" alt=""></div>
+          </div>
+          
+         
+            
+          
+        </div>
+            
+        <label for="popup"></label>
+        <!-- 바깥 클릭시 창 닫힘 -->
+    </div>
+    </div>
+
+    <script type="text/javascript" src="../js/popup.js">
+    </script>
+
+    <script type="text/javascript" src="../js/main_page.js">
+    </script>
+
+    <footer>
+        <div class="footer-row">
+          <div><a href="">서비스이용약관</a></div>
+          <div><a href="">개인정보처리방침</a></div>
+          <div><a href="">운영정책</a></div>
+          <div><a href="">1:1문의</a></div>        
+      </div>
+      <div class="footer-row">
+          <div class="liner">㈜길구</div>
+          <div class="liner">팀대표: 유지훈</div>
+          <div>서울시 강남구 테헤란로 14길 6 남도빌딩 2F~6F</div> 
+      </div>
+      <div class="footer-row">
+          <div class="liner">GuilGu 멤버</div>
+          <div>노상민, 정우석, 박원재, 김가현</div>
+      </div>
+      <div class="footer-row">
+          <div class="liner">대표번호: 1554-9970</div>
+          <div>팩스: 02-562-2378</div>
+      </div>
+      <div class="footer-row">
+          <div class="liner"><a href=""> GuilGu </a></div>
+          <div id="copyRight">GuilGu CopyrightⓒGG Corp. All Rights Reserved </div>
+      </div>
+    </footer>
+
+
+
+    </body>
+</html>

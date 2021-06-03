@@ -1,0 +1,90 @@
+
+/* 길드관리 페이지의 캘린더 페이지입니다. */
+.flex-box{
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  flex-wrap: wrap;
+}
+.bold{
+    font-weight: bold;
+}
+.guild-msg{
+  background-color: silver;
+}
+.content-div{
+  background-color: silver;
+  width: 800px;
+  height: 1250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.title{
+  margin-left: -700px;
+  height: 120px;
+}
+.calender{
+  color: red;
+  background-color: white;
+  width: 700px;
+  height: 600px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.calender-content{
+  padding: 0px 20px 0px 20px;
+}
+/* 캘린더 css 끝 */
+/* 캘린더 css 끝 */
+.guild-msg{
+  width: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #7D5FFF;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+.guild-Amsg-div{
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 550px;
+  height: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 20px;
+}
+.guild-Amsg-head{
+  background-color: #7D5FFF;
+  font-weight: bold;
+  border-left: 3px solid silver;
+  border-right: 3px solid silver;
+  height: 40px;
+}
+.guild-Amsg{
+  width: 550px;
+}
+.guild-Amsg th{
+  padding-top: 12px;
+}
+.guild-Amsg td{
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.main-text{
+  border-bottom: 1px solid silver;
+  border-top: 1px solid silver;
+}
+th, td{
+  text-align: center;
+}
+.attention{
+  color: skyblue;
+}
+

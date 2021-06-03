@@ -1,0 +1,107 @@
+.nav__left img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.top {
+  background-color: #7d5fff;
+  color: white;
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 65px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  width: 1200px;
+}
+.nav__logo {
+  display: flex;
+}
+.nav__logo h1 {
+  font-weight: 800;
+  font-size: 38px;
+  color: white;
+}
+.nav__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav__right-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__right-menu > li {
+  margin-right: 20px;
+}
+.nav__right-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.nav__right-menu li {
+  transition: all 0.2s;
+}
+.nav__right-menu li:hover {
+  font-weight: 900;
+}
+/* 로그인 후  */
+.nav__right-mymenu {
+  display: flex;
+  position: relative;
+}
+.nav__right-mymenu-fixed {
+  display: flex;
+  align-items: center;
+}
+.nav__right-mymenu-img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 5px;
+}
+.nav__right-mymenu-slide {
+  display: block;
+  position: absolute;
+  width: 130px;
+
+  top: 45px;
+  left: 0px;
+  background-color: #7d5fff;
+  text-align: center;
+}
+.nav__right-mymenu-list {
+  display: none;
+  z-index: 100;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.nav__right-mymenu-list > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+}
+.nav__right-mymenu-list a {
+  color: white;
+}
+
+.nav__right-mymenu-list li:hover {
+  font-weight: 900;
+}
+.nav__right-mymenu-img + a {
+  font-size: 20px;
+  color: white;
+}

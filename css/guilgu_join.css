@@ -1,0 +1,153 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700&display=swap");
+@import url(reset.css);
+/* component */
+@import url(component/board.css);
+@import url(component/top-nav.css);
+@import url(component/btn-input.css);
+@import url(component/category.css);
+@import url(component/side-nav.css);
+@import url(component/footer.css);
+/* screen */
+@import url(profile.css);
+@import url(gamenews.css);
+@import url(login.css);
+
+/* 공통 */
+body {
+  font-family: "Gothic A1", sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+section {
+  margin-top: 70px;
+  width: 1200px;
+  position: relative;
+  margin-bottom: 50px;
+}
+::selection {
+  background-color: #7d5fff;
+  color: white;
+}
+
+/* 편의를 위한 스타일 */
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.none {
+  display: none;
+}
+.line {
+  /* section을 가로지르는 보라색 구분선이 생깁니다 */
+  border-bottom: 2px solid #7d5fff;
+  width: 1200px;
+  margin: 30px 0px;
+}
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+.margin-bottom-0 {
+  margin-bottom: 0px;
+}
+.flex__start-center {
+  /* 어떤 요소를 나란히, 시작기준배치, 가운데 정렬 하고 싶을때 사용합니다*/
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex__dir-col {
+  flex-direction: column;
+}
+/* 아직 미정, 작업중 */
+.search__form {
+  width: 1200;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.card__album {
+  /* 카드 형태의 자식요소가 담기는 부모요소 입니다 */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.card__grand {
+  /* 그랜드 상품의 카드 스타일입니다 */
+  width: 250px;
+  height: 250px;
+  margin-bottom: 45px;
+  margin: 20px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.card__platinum {
+  /* 플래티넘 상품의 카드가 담기는 부모요소 입니다*/
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+}
+.card__platinum-row {
+  /* 플래티넘 상품의 카드 스타일입니다 */
+  width: 250px;
+  height: 115px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+/* 여기부터 guilgu_join입니다. */
+.join_form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 35px 50px 35px;
+  background-color: rgba(245, 245, 245, 0.7);
+  margin-bottom: 250px;
+}
+.input-flex{
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.form__input-text {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  height: 25px;
+}
+.flex-position{
+  display: flex;
+  justify-content: space-around;
+  width: 350px;
+}
+.flex-foot-button{
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+}
+.input-flex-email{
+  display: flex;
+  justify-content: space-evenly;
+  width: 550px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 110px;
+}
+.email{
+  margin-right: 15px;
+}

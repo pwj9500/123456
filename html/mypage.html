@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>guilgu | myprofile</title>
+  </head>
+  <body>
+    <header class="top">
+      <div class="nav">
+        <div class="nav__left">
+          <a class="nav__logo" href="index.html">
+            <img src="/logo.svg" alt="" />
+            <h1>guilgu</h1>
+          </a>
+        </div>
+        <div class="nav__right">
+          <ul class="nav__right-menu">
+            <li><a href="#">게임별</a></li>
+            <li><a href="#">헤드헌팅</a></li>
+            <li><a href="#">게임뉴스</a></li>
+            <li><a href="#">길드관리</a></li>
+          </ul>
+          <div class="nav__right-btn">
+            <button class="sign-in__btn">sign in</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="profile">
+      <h1>my profile</h1>
+      <form class="profile-form" action="">
+        <div class="profile-row">
+          <div class="profile-row-label">
+            <label for="title">자기소개서 제목</label>
+          </div>
+          <input type="text" name="title" id="title" />
+        </div>
+        <div class="profile-row">
+          <div class="profile-row-label">
+            <label for="gameTitle">이용 중인 게임</label>
+          </div>
+          <select name="gameTitle" id="gameTitle">
+            <option value="게임종류">게임종류</option>
+            <option value="게임종류">게임종류</option>
+            <option value="게임종류">게임종류</option>
+            <option value="게임종류">게임종류</option>
+          </select>
+        </div>
+        <div class="profile-row">
+          <div class="profile-row-label">
+            <label for="gameId">인게임 아이디</label>
+          </div>
+          <input type="text" name="title" id="gameId" />
+        </div>
+        <div class="profile-row">
+          <div class="profile-row-label">
+            <label for="guildTitle">소속 길드명</label>
+          </div>
+          <input
+            type="text"
+            name="title"
+            id="guildTitle"
+            placeholder="미가입시 공란 가능"
+          />
+        </div>
+        <div class="profile-row">
+          <div class="profile-row-label">
+            <label for="favGuildList">관심 길드 목록</label>
+          </div>
+          <div class="profile__radio">
+            <input type="radio" value="공개" name="favGuildList" id="yes" />
+            <label for="yes">공개</label>
+            <input type="radio" value="비공개" name="favGuildList" id="no" />
+            <label for="yes">비공개</label>
+          </div>
+        </div>
+        <div class="profile-row">
+          <div class="profile-row-label">
+            <label for="userType">회원 타입</label>
+          </div>
+          <div class="profile__radio">
+            <input type="radio" value="길드장" name="userType" id="master" />
+            <label for="master">길드장</label>
+            <input type="radio" value="길드원" name="userType" id="member" />
+            <label for="member">길드원</label>
+          </div>
+        </div>
+        <div class="profile-row">
+          <div class="profile-row-label">
+            <label for="gender">성별</label>
+          </div>
+          <div class="profile__radio">
+            <input type="radio" value="f" name="gender" id="f" />
+            <label for="f">여성</label>
+            <input type="radio" value="m" name="gender" id="m" />
+            <label for="m">남성</label>
+          </div>
+        </div>
+        <div class="profile-row">
+          <div class="profile-row-label">
+            <label for="age">연령대</label>
+          </div>
+          <div class="profile__radio">
+            <input type="radio" value="10" name="age" id="10" />
+            <label for="10">10대</label>
+            <input type="radio" value="20" name="age" id="20" />
+            <label for="10">20대</label>
+            <input type="radio" value="30" name="age" id="30" />
+            <label for="10">30대</label>
+            <input type="radio" value="40" name="age" id="40" />
+            <label for="10">40대</label>
+          </div>
+        </div>
+        <div class="profile-row">
+          <div class="profile-row-label">
+            <label for="playtime">하루 평균 플레이 시간</label>
+          </div>
+          <div class="profile__radio-time">
+            <div class="radio-time">
+              <input type="radio" value="1" name="playtime" id="1" />
+              <label for="10">1시간 이내</label>
+            </div>
+            <div class="radio-time">
+              <input type="radio" value="20" name="age" id="3" />
+              <label for="10">1시간~3시간</label>
+            </div>
+            <div class="radio-time">
+              <input type="radio" value="30" name="age" id="5" />
+              <label for="10">3시간~5시간</label>
+            </div>
+            <div class="radio-time">
+              <input type="radio" value="40" name="age" id="over" />
+              <label for="10">5시간 이상</label>
+            </div>
+          </div>
+        </div>
+        <div class="profile-row">
+          <div class="profile-row-label">
+            <label for="playtime">접속 요일</label>
+          </div>
+          <div class="profile-row-checkbox">
+            <div class="profile-row-check">
+              <input type="checkbox" name="mon" id="mon" />
+              <label for="mon">월</label>
+            </div>
+            <div class="profile-row-check">
+              <input type="checkbox" name="mon" id="tue" />
+              <label for="mon">화</label>
+            </div>
+            <div class="profile-row-check">
+              <input type="checkbox" name="wed" id="wed" />
+              <label for="mon">수</label>
+            </div>
+            <div class="profile-row-check">
+              <input type="checkbox" name="thu" id="thu" />
+              <label for="mon">목</label>
+            </div>
+            <div class="profile-row-check">
+              <input type="checkbox" name="fri" id="fri" />
+              <label for="fri">금</label>
+            </div>
+            <div class="profile-row-check">
+              <input type="checkbox" name="sat" id="sat" />
+              <label for="mon">토</label>
+            </div>
+            <div class="profile-row-check">
+              <input type="checkbox" name="sun" id="sun" />
+              <label for="mon">일</label>
+            </div>
+            <!-- <div class="profile-row-check">
+              <input type="checkbox" name="sun" id="sun" />
+              <label for="mon">매일</label>
+            </div>
+            <div class="profile-row-check">
+              <input type="checkbox" name="sun" id="sun" />
+              <label for="mon">비정기</label>
+            </div> -->
+          </div>
+        </div>
+        <div class="profile-row">
+          <div class="profile-row-label">
+            <label for="averagePay">한달 평균 과금 정도</label>
+          </div>
+          <div class="profile__radio-time">
+            <div class="radio-time">
+              <input type="radio" value="0" name="averagePay" />
+              <label for="">없음</label>
+            </div>
+            <div class="radio-time">
+              <input type="radio" value="10" name="averagePay" />
+              <label for="">10만원 이내</label>
+            </div>
+            <div class="radio-time">
+              <input type="radio" value="30" name="averagePay" />
+              <label for="">10만원~30만원</label>
+            </div>
+            <div class="radio-time">
+              <input type="radio" value="40" name="averagePay" />
+              <label for="">30만원 이상</label>
+            </div>
+          </div>
+        </div>
+        <div class="profile-btn">
+          <input type="submit" value="저장하기" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
